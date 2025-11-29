@@ -10,7 +10,7 @@ export default function Home() {
       <h1 className="text-2xl font-bold">Welcome to Clean Nairobi</h1>
 
       <GarbageRequestForm />
-      <DumpsiteReportForm />
+      <ReportDumpForm />
 
       {/* Requests and Reports List */}
     </div>

@@ -3,7 +3,14 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // backend URL
+// Set Axios base URL
+axios.defaults.baseURL = "https://mern-app-ksbv.onrender.com";
+
+// Initialize Socket.io client
+const socket = io("https://mern-app-ksbv.onrender.com", {
+  transports: ["websocket"],
+  withCredentials: true,
+});
 
 export default function Dashboard() {
   const [garbageRequests, setGarbageRequests] = useState([]);
