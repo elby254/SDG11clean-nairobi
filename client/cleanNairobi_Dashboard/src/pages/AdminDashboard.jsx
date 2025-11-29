@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // Connect to backend Socket.io
+const socket = io("https://mern-app-ksbv.onrender.com"); // Connect to backend Socket.io
 
 export default function AdminDashboard() {
   const [requests, setRequests] = useState([]);

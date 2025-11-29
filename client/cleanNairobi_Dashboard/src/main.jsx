@@ -7,7 +7,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 // Axios default base URL
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://mern-app-ksbv.onrender.com";
 
 // Clerk publishable key from .env
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
