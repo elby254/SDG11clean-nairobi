@@ -6,10 +6,10 @@ import axios from "axios";
 import App from "./App.jsx";
 import "./index.css";
 
-// Axios default base URL
+// Set Axios default base URL to your deployed backend
 axios.defaults.baseURL = "https://mern-app-ksbv.onrender.com";
 
-// Clerk publishable key from .env
+// Clerk publishable key from environment variables
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
